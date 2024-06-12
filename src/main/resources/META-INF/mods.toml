@@ -5,7 +5,7 @@ issueTrackerURL = "https://github.com/Mrthomas20121/ThermalExtra/issues"
 
 [[mods]]
 modId = "thermal_and_space"
-version = "1.20.1-1.0.1"
+version = "1.20.1-1.0.2"
 displayName = "Thermal And Space"
 displayURL = "https://www.curseforge.com/minecraft/mc-mods/thermal_and_space"
 #logoFile="tinkers_reforged_logo.png"
@@ -26,5 +26,11 @@ Compat between Ad Astra and Thermal Expansion.
     modId = "minecraft"
     mandatory = true
     versionRange = "[1.19.2,)"
+    ordering = "NONE"
+    side = "BOTH"
+[[dependencies.thermal_and_space]]
+    modId = "ad_astra"
+    mandatory = true
+    versionRange = "[1.15.17,)"
     ordering = "NONE"
     side = "BOTH"

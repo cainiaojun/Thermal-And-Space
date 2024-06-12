@@ -1,10 +1,10 @@
 package mrthomas20121.thermal_and_space.datagen;
 
-import earth.terrarium.ad_astra.common.registry.ModBlocks;
+import earth.terrarium.adastra.common.registry.ModBlocks;
 import mrthomas20121.thermal_and_space.ThermalAndSpace;
-import mrthomas20121.thermal_and_space.init.AstraStone;
+import mrthomas20121.thermal_and_space.api.AstraStone;
 import mrthomas20121.thermal_and_space.init.SpaceBlocks;
-import mrthomas20121.thermal_and_space.init.ThermalOre;
+import mrthomas20121.thermal_and_space.api.ThermalOre;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.data.worldgen.BootstapContext;
@@ -12,7 +12,6 @@ import net.minecraft.data.worldgen.features.FeatureUtils;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.levelgen.VerticalAnchor;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.feature.Feature;
@@ -69,7 +68,7 @@ public class SpaceFeatures {
                             OreConfiguration.target(new BlockMatchTest(ModBlocks.MOON_SAND.get()), SpaceBlocks.SAND_ORES.get(AstraStone.MOON).get().defaultBlockState()),
                             OreConfiguration.target(new BlockMatchTest(ModBlocks.MARS_SAND.get()), SpaceBlocks.SAND_ORES.get(AstraStone.MARS).get().defaultBlockState()),
                             OreConfiguration.target(new BlockMatchTest(ModBlocks.VENUS_SAND.get()), SpaceBlocks.SAND_ORES.get(AstraStone.VENUS).get().defaultBlockState())
-                    ), 24));
+                    ), 20));
         }
 
         private static TagMatchTest deepslateMatch = new TagMatchTest(BlockTags.DEEPSLATE_ORE_REPLACEABLES);
@@ -118,7 +117,7 @@ public class SpaceFeatures {
             context.register(SPACE_SILVER, placedOreUniform(configuredFeatures, Configured.SPACE_SILVER, "space_silver", -60, 100, 8));
             context.register(SPACE_NICKEL, placedOreUniform(configuredFeatures, Configured.SPACE_NICKEL, "space_nickel", -40, 120, 8));
 
-            context.register(SPACE_OIL_SAND, placedOreUniform(configuredFeatures, Configured.SPACE_OIL_SAND, "space_oil_sand", 40, 120, 18));
+            context.register(SPACE_OIL_SAND, placedOreUniform(configuredFeatures, Configured.SPACE_OIL_SAND, "space_oil_sand", 40, 120, 12));
         }
 
         private static PlacedFeature registerPlacedFeature(HolderGetter<ConfiguredFeature<?, ?>> getter, ResourceKey<ConfiguredFeature<?, ?>> feature, PlacementModifier... modifiers) {

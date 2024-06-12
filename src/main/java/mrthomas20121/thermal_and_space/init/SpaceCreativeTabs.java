@@ -1,6 +1,8 @@
 package mrthomas20121.thermal_and_space.init;
 
 import mrthomas20121.thermal_and_space.ThermalAndSpace;
+import mrthomas20121.thermal_and_space.api.AstraStone;
+import mrthomas20121.thermal_and_space.api.ThermalOre;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.item.CreativeModeTab;

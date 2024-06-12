@@ -2,9 +2,9 @@ package mrthomas20121.thermal_and_space.datagen;
 
 import cofh.lib.init.data.ItemModelProviderCoFH;
 import mrthomas20121.thermal_and_space.ThermalAndSpace;
-import mrthomas20121.thermal_and_space.init.AstraStone;
+import mrthomas20121.thermal_and_space.api.AstraStone;
 import mrthomas20121.thermal_and_space.init.SpaceBlocks;
-import mrthomas20121.thermal_and_space.init.ThermalOre;
+import mrthomas20121.thermal_and_space.api.ThermalOre;
 import net.minecraft.data.PackOutput;
 import net.minecraftforge.common.data.ExistingFileHelper;
 

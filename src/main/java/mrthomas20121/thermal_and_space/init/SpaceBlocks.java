@@ -2,6 +2,8 @@ package mrthomas20121.thermal_and_space.init;
 
 import cofh.lib.common.block.OreBlockCoFH;
 import mrthomas20121.thermal_and_space.ThermalAndSpace;
+import mrthomas20121.thermal_and_space.api.AstraStone;
+import mrthomas20121.thermal_and_space.api.ThermalOre;
 import mrthomas20121.thermal_and_space.util.Helpers;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;

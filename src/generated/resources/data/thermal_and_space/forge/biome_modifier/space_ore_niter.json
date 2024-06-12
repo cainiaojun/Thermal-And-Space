@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "#ad_astra:stone_biomes",
+  "biomes": "#ad_astra:all_biomes",
   "features": "thermal_and_space:space_niter",
   "step": "underground_ores"
 }

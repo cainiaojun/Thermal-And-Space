@@ -15,7 +15,7 @@ public class SpaceTags {
     public static TagKey<Block> moon_ore_replaceables = create("ad_astra:moon_ore_replaceables");
     public static TagKey<Block> venus_ore_replaceables = create("ad_astra:venus_ore_replaceables");
 
-    public static TagKey<Biome> ad_adstra_biomes = biome("ad_astra:stone_biomes");
+    public static TagKey<Biome> ad_adstra_biomes = biome("ad_astra:all_biomes");
 
     private static TagKey<Block> create(String name) {
         return TagKey.create(Registries.BLOCK, new ResourceLocation(name));
