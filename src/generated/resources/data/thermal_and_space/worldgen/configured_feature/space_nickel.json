@@ -24,7 +24,7 @@
       },
       {
         "state": {
-          "Name": "thermal:nickel_ore"
+          "Name": "thermal:deepslate_nickel_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

@@ -33,7 +33,7 @@
       },
       {
         "state": {
-          "Name": "thermal:lead_ore"
+          "Name": "thermal:deepslate_lead_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

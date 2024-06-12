@@ -33,7 +33,7 @@
       },
       {
         "state": {
-          "Name": "thermal:cinnabar_ore"
+          "Name": "thermal:deepslate_cinnabar_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

@@ -33,7 +33,7 @@
       },
       {
         "state": {
-          "Name": "thermal:apatite_ore"
+          "Name": "thermal:deepslate_apatite_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

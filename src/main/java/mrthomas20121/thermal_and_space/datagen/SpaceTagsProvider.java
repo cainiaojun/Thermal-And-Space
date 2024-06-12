@@ -72,7 +72,9 @@ public class SpaceTagsProvider {
 
             for(AstraStone stone : stones) {
 
-                this.tag(Tags.Items.ORES).add(SpaceBlocks.SAND_ORES.get(stone).get().asItem());
+                if(stone.isSand()) {
+                    this.tag(Tags.Items.ORES).add(SpaceBlocks.SAND_ORES.get(stone).get().asItem());
+                }
 
                 for(ThermalOre ore: ores) {
                     OreTagData tags = ore.getTags();

@@ -82,7 +82,7 @@ public class SpaceFeatures {
                         oreReplacements.add(OreConfiguration.target(stone.getTag(), oreBlock.defaultBlockState())));
             }
 
-            oreReplacements.add(OreConfiguration.target(deepslateMatch, BLOCKS.get(ore.name().toLowerCase(Locale.ROOT)+"_ore").defaultBlockState()));
+            oreReplacements.add(OreConfiguration.target(deepslateMatch, BLOCKS.get("deepslate_"+ore.name().toLowerCase(Locale.ROOT)+"_ore").defaultBlockState()));
 
             return oreReplacements;
         }

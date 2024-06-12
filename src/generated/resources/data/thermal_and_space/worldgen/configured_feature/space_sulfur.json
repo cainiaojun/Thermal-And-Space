@@ -24,7 +24,7 @@
       },
       {
         "state": {
-          "Name": "thermal:sulfur_ore"
+          "Name": "thermal:deepslate_sulfur_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

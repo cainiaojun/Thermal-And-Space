@@ -51,7 +51,7 @@
       },
       {
         "state": {
-          "Name": "thermal:tin_ore"
+          "Name": "thermal:deepslate_tin_ore"
         },
         "target": {
           "predicate_type": "minecraft:tag_match",

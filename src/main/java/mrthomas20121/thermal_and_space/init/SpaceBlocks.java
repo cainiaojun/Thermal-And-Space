@@ -25,7 +25,7 @@ public class SpaceBlocks {
     public static DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, ThermalAndSpace.MOD_ID);
     public static DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, ThermalAndSpace.MOD_ID);
 
-    public static Map<AstraStone, Map<ThermalOre, RegistryObject<OreBlockCoFH>>> ORES = Helpers.mapOfKeys(AstraStone.class, stone -> Helpers.mapOfKeys(ThermalOre.class, ore -> registerOre(ore.getOreName(stone.name().toLowerCase(Locale.ROOT)), stone)));
+    public static Map<AstraStone, Map<ThermalOre, RegistryObject<OreBlockCoFH>>> ORES = Helpers.mapOfKeys(AstraStone.class, stone -> Helpers.mapOfKeys(ThermalOre.class, ore -> registerOre(ore.getOreName(stone.name().toLowerCase(Locale.ROOT)))));
     public static Map<AstraStone, RegistryObject<FallingBlock>> SAND_ORES = Helpers.mapOfKeys(AstraStone.class, AstraStone::isSand, stone -> registerSandOre("oil_%s_sand".formatted(stone.name().toLowerCase(Locale.ROOT))));
 
     private static RegistryObject<FallingBlock> registerSandOre(String name) {
@@ -34,8 +34,8 @@ public class SpaceBlocks {
         return block;
     }
 
-    private static RegistryObject<OreBlockCoFH> registerOre(String name, AstraStone stone) {
-        RegistryObject<OreBlockCoFH> block = BLOCKS.register(name, () -> new OreBlockCoFH(BlockBehaviour.Properties.copy(Blocks.DIAMOND_ORE).strength(3.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
+    private static RegistryObject<OreBlockCoFH> registerOre(String name) {
+        RegistryObject<OreBlockCoFH> block = BLOCKS.register(name, () -> new OreBlockCoFH(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).strength(3.0F, 3.0F).sound(SoundType.STONE).requiresCorrectToolForDrops()));
         ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
         return block;
     }
